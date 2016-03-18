@@ -1,0 +1,81 @@
+#navigation_bar_wrapper{
+  position:fixed;
+  top:0px;
+  width:100%;
+  height:50px;
+  background:#277553;
+  z-index:2;
+
+  p, h1, h2, h3, h4, h5, h6{
+    cursor:default;
+    padding:0px;
+    margin:0px;
+  }
+}
+
+.navigation_bar_dropdown{
+  position:absolute;
+  overflow:hidden;
+  width:100%;
+  max-height:0px;
+  top:50px;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+}
+
+#portfolio_dropdown{
+  background:red;
+}
+
+.navigation_bar_button{
+  position:relative;
+  float:right;
+  height:100%;
+  width:10%;
+  background:#277553;
+  cursor: pointer;
+  text-align:center;
+
+  p{
+    cursor:pointer !important;
+  }
+
+  >p{
+    position:relative;
+    top:30%;
+  }
+
+  &:hover{
+    background:#0f5738;
+  }
+}
+
+.navigation_bar_hover{
+
+  &:hover{
+    .navigation_bar_dropdown{
+      max-height:900px;
+    }
+  }
+  
+}
+
+#portfolio_hover{
+}
+
+#title_bar{
+  float:left;
+  text-align:center;
+  height:100%;
+  width:70%;
+  padding-top:10px;
+}
+
+.project_title{
+  margin:5px;
+}
+
+.bar{
+  border:1px solid #003A21;
+  border-radius:3px;
+}
