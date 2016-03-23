@@ -1,52 +1,7 @@
-body{
-  padding: 0px;
-  margin: 0px;
-  
-}
 
-#main_wrapper{
-  position: fixed;
-  margin:0px;
-  padding:0px;
-  height:100%;
-  width:100%;
-  background: cyan;
-}
 
-#content_wrapper{
-  position:relative;
-  width:100%;
-  height:900px;
-  top:50px;
-  background:#718ea4;
-  z-index:1;
-}
 
-#left_column{
-  float: left;
-  top:10%;
-  width: 15%;
-  height: 100%;
-  background: #75AF96;
-}
 
-#centre_column{
-  float: left;
-  width:70%;
-  height: 100%;
-  background:#718EA4;
 
-  #picture_box{
-    position:relative;
-    width:100%;
-    height:300px;
-    background:cyan;
-  }
-}
 
-#right_column{
-  float: right;
-  width: 15%;
-  height: 100%;
-  background:#718EA4;
-}
+

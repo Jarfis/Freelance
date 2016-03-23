@@ -11,12 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160317180647) do
+ActiveRecord::Schema.define(version: 20160318180329) do
+
+  create_table "project_sample_images", force: :cascade do |t|
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "image"
+    t.string   "description"
+    t.integer  "project_id"
+  end
+
+  add_index "project_sample_images", ["project_id"], name: "index_Project_Sample_Images_on_project_id"
 
   create_table "projects", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
     t.string   "title"
+    t.string   "short_description"
+    t.string   "long_description"
+    t.string   "tech_description"
+    t.string   "preview_image"
+    t.string   "main_image"
   end
 
 end

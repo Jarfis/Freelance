@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
   root to: 'home#index'
+  get "/projects", to: "projects#index", as: "projects"
+  get "/project/:project_id", to: "projects#show", as: "project"
+
+  get "/project/:project_id/display_sample", to: "project_sample_images#display_sample", as: "display_sample"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

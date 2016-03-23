@@ -1,0 +1,14 @@
+<%= link_to(project_path(project_id: p.id)) do %>
+<div class="preview_wrapper">
+  <div class="project_preview <%= i%2==0 ? "preview_left" : "preview_right" %>">
+    <img class="main_preview_image" src="<%= p.preview_image %>">
+    <h3 class="preview_title"><%= p.title %></h3>
+    <p class="preview_description"><%= p.short_description %></p>
+    <div class="preview_image_wrapper">
+      <% p.project_sample_images.limit(3).each do |pim| %>
+        <img class="preview_image" src="<%= pim.image %>">
+      <% end %>
+    </div>
+  </div>
+</div>
+<% end %>

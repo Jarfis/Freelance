@@ -5,21 +5,10 @@
   <div class="bar navigation_bar_button">
     <p>About</p>
   </div>
-  <div id="portfolio_hover" class="bar navigation_bar_button navigation_bar_hover">
-    <p>Portfolio</p>
-    <div id="portfolio_dropdown" class="navigation_bar_dropdown">
-      <% @projects.each do |p| %>
-        <p class="project_title"><%= p.title %></p>
-      <% end %>
-    </div>
+  <div id="portfolio_hover" class="bar navigation_bar_button">
+    <%= link_to "Portfolio", projects_path %>
   </div>
-  <div id="services_hover" class="bar navigation_bar_button navigation_bar_hover">
+  <div id="services_hover" class="bar navigation_bar_button">
     <p>Services</p>
-    <div id="services_dropdown" class="navigation_bar_dropdown">
-      <p>service one</p>
-      <p>service two</p>
-      <p>service three</p>
-      <p>service four</p>
-    </div>
   </div>
 </div>

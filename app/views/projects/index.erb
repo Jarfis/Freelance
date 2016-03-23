@@ -1,0 +1,5 @@
+<div id="project_list_wrapper">
+  <% @projects.each_with_index do |p,i| %>
+    <%= render partial: "projects/preview", locals: {p: p, i: i} %>
+  <% end %>
+</div>

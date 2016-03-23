@@ -1,0 +1,19 @@
+<div id="project_wrapper">
+  <img id="main_project_image" src="<%= @project.main_image %>">
+  <h1><%= @project.title %></h1>
+  <p><%= @project.long_description %></p>
+  <div id="project_samples_wrapper">
+    <% @project.project_sample_images.each do |psi| %>
+      <div class="sample_image_wrapper">
+        <%= link_to(display_sample_path(sample_id: psi.id), remote: true) do %>
+          <img class="sample_image" src="<%= psi.image %>">
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <p><%= @project.tech_description %></p>
+  <div class="modal_cover">
+  </div>
+  <div class="sample_modal">
+  </div>
+</div>
